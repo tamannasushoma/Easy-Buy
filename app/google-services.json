@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "623401426203",
+    "project_id": "easy-buy-3195c",
+    "storage_bucket": "easy-buy-3195c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623401426203:android:1b703db6cd6de008d547be",
+        "android_client_info": {
+          "package_name": "com.example.easybuy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDzYFjjLhXNR0hjlv07qtRsJW17Sq0uoA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
