@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context=".views.login.LoginFragment">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_250sdp"
+        app:lottie_rawRes="@raw/login_anim"
+        android:layout_marginBottom="@dimen/_16sdp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/loginEmail"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_marginVertical="@dimen/_4sdp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:id="@+id/input_loginEmail"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/loginPassword"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        app:endIconMode="password_toggle"
+        android:layout_marginVertical="@dimen/_4sdp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textWebPassword"
+            android:id="@+id/input_loginPassword"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/loginButton"
+        style="@style/Widget.Material3.Button.UnelevatedButton"
+        android:layout_marginVertical="@dimen/_20sdp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Haven't registered yet? Register"
+        android:id="@+id/notUserButton"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        app:strokeColor="#FF9800"
+
+        />
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".views.starter.StartFragment"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:drawableStart="@mipmap/ic_launcher_round"
+        android:drawablePadding="@dimen/_12sdp"
+        android:fontFamily="@font/dynapuff_semibold"
+        android:gravity="center"
+        android:text="Easy Buy"
+        android:textColor="@color/ic_launcher_background"
+        android:textSize="@dimen/_16ssp"
+
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        app:lottie_rawRes="@raw/start_anim"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
+    <TextView
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Welcome to Easy Buy"
+        android:layout_margin="@dimen/_24sdp"
+        android:textColor="#FF9800"
+        android:gravity="center"
+
+
+        />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_8sdp"
+        android:layout_marginHorizontal="@dimen/_32sdp"
+        style="@style/Widget.Material3.Button.UnelevatedButton"
+        android:id="@+id/loginBtn"
+        android:text="Login"
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_8sdp"
+        android:layout_marginHorizontal="@dimen/_32sdp"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        app:strokeColor="#FF9800"
+        android:id="@+id/registerBtn"
+        android:text="Register"
+
+        />
+</LinearLayout>

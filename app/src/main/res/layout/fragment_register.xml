@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center"
+    tools:context=".views.login.LoginFragment">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_180sdp"
+        app:lottie_rawRes="@raw/ecom2"
+        android:layout_marginTop="@dimen/_42sdp"
+        android:layout_marginBottom="@dimen/_32sdp"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/regName"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_marginVertical="@dimen/_4sdp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/input_regName"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/regEmail"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_marginVertical="@dimen/_4sdp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:id="@+id/input_regEmail"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/regPassword"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        app:endIconMode="password_toggle"
+        android:layout_marginVertical="@dimen/_4sdp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textWebPassword"
+            android:id="@+id/input_regPassword"
+
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        >
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer"
+            style="?attr/materialButtonOutlinedStyle"
+            />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seller"
+            style="?attr/materialButtonOutlinedStyle"
+
+            />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            style="?attr/materialButtonOutlinedStyle"
+            />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/regButton"
+        style="@style/Widget.Material3.Button.UnelevatedButton"
+        android:layout_marginVertical="@dimen/_12sdp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already has an account? login"
+        android:id="@+id/notregButton"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        app:strokeColor="#FF9800"
+
+        />
+
+</LinearLayout>
